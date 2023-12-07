@@ -1,0 +1,22 @@
+.characterCard,
+.actionArea {
+  height: 100%;
+}
+
+.name {
+  font-size: 16px;
+}
+
+.gender {
+  font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+  .name {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}

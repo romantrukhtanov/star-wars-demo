@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Skeleton > render component 1`] = `
+<body>
+  <div>
+    <span
+      class="MuiSkeleton-root _root_2cc9eb MuiSkeleton-rounded _rounded_2cc9eb MuiSkeleton-wave css-1hirv1y-MuiSkeleton-root"
+      style="height: 100%;"
+    />
+  </div>
+</body>
+`;

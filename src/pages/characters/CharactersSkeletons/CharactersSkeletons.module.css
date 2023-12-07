@@ -1,0 +1,23 @@
+.charactersSkeletons {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+
+  width: 100%;
+}
+
+.row {
+  height: 320px;
+}
+
+@media (max-width: 767.98px) {
+  .charactersSkeletons {
+    grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+  }
+
+  .row {
+    height: 255px;
+  }
+}
+

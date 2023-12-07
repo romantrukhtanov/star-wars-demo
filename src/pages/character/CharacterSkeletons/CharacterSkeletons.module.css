@@ -1,0 +1,31 @@
+.characterSkeletons {
+  display: grid;
+  gap: 30px;
+}
+
+.breadcrumbsSkeleton {
+  width: 270px;
+  height: 24px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.mediaSkeleton {
+  width: 240px;
+  height: 330px;
+}
+
+.bioSkeletons {
+  display: grid;
+  gap: 20px;
+
+  width: 250px;
+}
+
+@media (max-width: 767.98px) {
+
+}
+

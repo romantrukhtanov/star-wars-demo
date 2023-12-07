@@ -1,0 +1,289 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Characters > render characters 1`] = `
+<body>
+  <div>
+    <div
+      class="_container_523845"
+    >
+      <div
+        class="_characters_a7e077"
+      >
+        <div
+          class="_search_a7e077"
+        >
+          <div
+            class="_search_a9d8a5"
+          >
+            <div
+              class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon _autocomplete_a9d8a5 css-1h51icj-MuiAutocomplete-root"
+            >
+              <div
+                class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-b8u61y-MuiInputBase-root-MuiOutlinedInput-root"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="SearchIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                    />
+                  </svg>
+                  <input
+                    aria-autocomplete="list"
+                    aria-expanded="false"
+                    aria-invalid="false"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-12yjm75-MuiInputBase-input-MuiOutlinedInput-input"
+                    id=":r0:"
+                    placeholder="Search"
+                    role="combobox"
+                    spellcheck="false"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="MuiAutocomplete-endAdornment css-1q60rmi-MuiAutocomplete-endAdornment"
+                  >
+                    <button
+                      aria-label="Open"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-qzbt6i-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+                      tabindex="-1"
+                      title="Open"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        data-testid="ArrowDropDownIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </div>
+                  <fieldset
+                    aria-hidden="true"
+                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="css-ihdtdm"
+                    >
+                      <span
+                        class="notranslate"
+                      >
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="_pagination_a7e077"
+        >
+          <nav
+            aria-label="pagination navigation"
+            class="MuiPagination-root MuiPagination-text css-1oj2twp-MuiPagination-root"
+          >
+            <ul
+              class="MuiPagination-ul css-wjh20t-MuiPagination-ul"
+            >
+              <li>
+                <button
+                  aria-label="Go to previous page"
+                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary Mui-disabled MuiPaginationItem-previousNext css-9akhud-MuiButtonBase-root-MuiPaginationItem-root"
+                  disabled=""
+                  tabindex="-1"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    data-testid="NavigateBeforeIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-current="true"
+                  aria-label="page 1"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary Mui-selected MuiPaginationItem-page css-9akhud-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  1
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 2"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary MuiPaginationItem-page css-9akhud-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  2
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 3"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary MuiPaginationItem-page css-9akhud-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  3
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 4"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary MuiPaginationItem-page css-9akhud-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  4
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 5"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary MuiPaginationItem-page css-9akhud-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  5
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <div
+                  class="MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary MuiPaginationItem-ellipsis css-1v2lvtn-MuiPaginationItem-root"
+                >
+                  …
+                </div>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 9"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary MuiPaginationItem-page css-9akhud-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  9
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to next page"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary MuiPaginationItem-previousNext css-9akhud-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    data-testid="NavigateNextIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="_listWrapper_a7e077"
+        >
+          <ul
+            class="_list_a7e077"
+          >
+            <li>
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root _characterCard_c7dba3 css-bhp9pd-MuiPaper-root-MuiCard-root"
+              >
+                <a
+                  class="MuiButtonBase-root MuiCardActionArea-root _actionArea_c7dba3 css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
+                  href="/character/5"
+                  tabindex="0"
+                >
+                  <img
+                    alt="Leia Organa"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img _media_c7dba3 css-o69gx8-MuiCardMedia-root"
+                    src="/images/people/5.jpg"
+                  />
+                  <div
+                    class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                  >
+                    <h3
+                      class="MuiTypography-root MuiTypography-h3 _name_c7dba3 css-krdrhq-MuiTypography-root"
+                    >
+                      Leia Organa
+                    </h3>
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 _gender_c7dba3 css-1pnmrwp-MuiTypography-root"
+                    >
+                      female
+                    </p>
+                  </div>
+                  <span
+                    class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+                  />
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

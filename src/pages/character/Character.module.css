@@ -1,0 +1,33 @@
+.character {
+  display: grid;
+  gap: 30px;
+
+  padding: 0 20px;
+}
+
+.hero {
+  display: flex;
+  gap: 30px;
+}
+
+.heroMedia {
+  max-width: 240px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+
+  margin-top: 12px;
+}
+
+.button {
+  min-width: 120px;
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

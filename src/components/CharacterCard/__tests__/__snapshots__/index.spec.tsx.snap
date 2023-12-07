@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CharacterCard > render component 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root _characterCard_c7dba3 css-bhp9pd-MuiPaper-root-MuiCard-root"
+    >
+      <a
+        class="MuiButtonBase-root MuiCardActionArea-root _actionArea_c7dba3 css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
+        href="https://swapi.dev/api/people/5/"
+        tabindex="0"
+      >
+        <img
+          alt="Leia Organa"
+          class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img _media_c7dba3 css-o69gx8-MuiCardMedia-root"
+          src="/images/people/5.jpg"
+        />
+        <div
+          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+        >
+          <h3
+            class="MuiTypography-root MuiTypography-h3 _name_c7dba3 css-krdrhq-MuiTypography-root"
+          >
+            Leia Organa
+          </h3>
+          <p
+            class="MuiTypography-root MuiTypography-body1 _gender_c7dba3 css-1pnmrwp-MuiTypography-root"
+          >
+            female
+          </p>
+        </div>
+        <span
+          class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+        />
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </a>
+    </div>
+  </div>
+</body>
+`;

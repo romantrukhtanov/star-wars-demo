@@ -1,0 +1,39 @@
+.editableBio {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+
+  height: 32px;
+}
+
+.nameInput {
+  width: 250px;
+
+  font-size: 32px;
+}
+
+.nameInput input {
+  padding: 0;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+
+  margin-top: 12px;
+}
+
+.button {
+  min-width: 120px;
+}

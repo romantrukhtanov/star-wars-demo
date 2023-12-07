@@ -1,0 +1,135 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Character > render character 1`] = `
+<body>
+  <div>
+    <div
+      class="_container_523845"
+    >
+      <div
+        class="_character_864183"
+      >
+        <nav
+          aria-label="breadcrumbs"
+          class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-63vwl1-MuiTypography-root-MuiBreadcrumbs-root"
+        >
+          <ol
+            class="MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"
+          >
+            <li
+              class="MuiBreadcrumbs-li"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-bvyohc-MuiTypography-root-MuiLink-root"
+                href="/characters"
+              >
+                Characters
+              </a>
+            </li>
+            <li
+              aria-hidden="true"
+              class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+            >
+              /
+            </li>
+            <li
+              class="MuiBreadcrumbs-li"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-1gqyz35-MuiTypography-root"
+              >
+                Leia Organa
+              </p>
+            </li>
+          </ol>
+        </nav>
+        <div
+          class="_hero_864183"
+        >
+          <div
+            class="_heroMedia_864183"
+          >
+            <img
+              alt="Leia Organa"
+              class="_heroImg_864183"
+              src="/images/people/5.jpg"
+            />
+          </div>
+          <div
+            class="_content_864183"
+          >
+            <div
+              class="_staticBio_32af71"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-h1 _name_32af71 css-o2w69a-MuiTypography-root"
+              >
+                Leia Organa
+              </h1>
+              <p
+                class="MuiTypography-root MuiTypography-body2 _text_32af71 css-e784if-MuiTypography-root"
+              >
+                Birth Year
+                :
+                 
+                19BBY
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body2 _text_32af71 css-e784if-MuiTypography-root"
+              >
+                Height
+                :
+                 
+                150cm
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body2 _text_32af71 css-e784if-MuiTypography-root"
+              >
+                Mass
+                :
+                 
+                49kg
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body2 _text_32af71 css-e784if-MuiTypography-root"
+              >
+                Gender
+                :
+                 
+                female
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body2 _text_32af71 css-e784if-MuiTypography-root"
+              >
+                Hair Color
+                :
+                 
+                brown
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body2 _text_32af71 css-e784if-MuiTypography-root"
+              >
+                Skin Color
+                :
+                 
+                light
+              </p>
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium _button_32af71 css-fze645-MuiButtonBase-root-MuiButton-root"
+                data-testid="edit-button"
+                tabindex="0"
+                type="button"
+              >
+                Edit
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

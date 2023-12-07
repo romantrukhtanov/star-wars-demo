@@ -1,0 +1,29 @@
+.layout {
+  position: relative;
+
+  min-height: calc(100vh - var(--vh-gap));
+}
+
+.main {
+  padding: 40px 20px 80px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  padding: 30px;
+
+  width: 100%;
+}
+
+.copyrights {
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+ .main {
+   padding-top: 48px;
+ }
+}

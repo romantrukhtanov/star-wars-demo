@@ -1,0 +1,21 @@
+.staticBio {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.button {
+  margin-top: 12px;
+
+  width: 120px;
+}

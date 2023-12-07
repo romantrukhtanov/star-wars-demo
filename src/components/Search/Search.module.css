@@ -1,0 +1,9 @@
+.autocomplete {
+  width: 300px;
+}
+
+@media (max-width: 767.98px) {
+  .autocomplete {
+    width: 100%;
+  }
+}
