@@ -5,7 +5,7 @@ import type * as M from '@/core/api/model';
 
 const NOT_FOUND_STATUS = 404;
 
-const API_URL = 'https://swapi.dev/api';
+const API_URL = 'https://swapi.tech/api';
 
 class Api {
   constructor(private readonly endPoint: string) {}

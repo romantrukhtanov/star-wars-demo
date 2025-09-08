@@ -29,7 +29,7 @@
     "experimentalDecorators": true,
     "paths": {
       "@/*": ["./*"],
-      "public/*": ["../public/*"],
+      "public/*": ["../public/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "*.js"],

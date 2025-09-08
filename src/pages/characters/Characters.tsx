@@ -14,13 +14,7 @@ const DEFAULT_PAGINATION_AMOUNT = 9;
 
 export function Characters() {
   const { isMobile } = useDeviceType();
-  const {
-    loading,
-    currentPage,
-    charactersData,
-    setCurrentPage,
-    setSearchParams,
-  } = useLoadCharacters();
+  const { loading, currentPage, charactersData, setCurrentPage, setSearchParams } = useLoadCharacters();
 
   return (
     <Container>
@@ -40,9 +34,7 @@ export function Characters() {
           />
         </div>
 
-        <div className={styles.listWrapper}>
-          {renderList()}
-        </div>
+        <div className={styles.listWrapper}>{renderList()}</div>
       </div>
     </Container>
   );
@@ -55,12 +47,10 @@ export function Characters() {
     if (!charactersData?.characters) {
       return (
         <div className={styles.noData}>
-          <Typography className={styles.noDataText} variant="body2">No data...</Typography>
-          <Button
-            className={styles.noDataButton}
-            onClick={() => changePage(1)}
-            type="button"
-          >
+          <Typography className={styles.noDataText} variant="body2">
+            No data...
+          </Typography>
+          <Button className={styles.noDataButton} onClick={() => changePage(1)} type="button">
             Go to first page
           </Button>
         </div>
@@ -69,7 +59,7 @@ export function Characters() {
 
     return (
       <ul className={styles.list}>
-        {charactersData?.characters.map((character) => (
+        {charactersData?.characters.map(character => (
           <li key={character.name}>
             <CharacterCard character={character} />
           </li>

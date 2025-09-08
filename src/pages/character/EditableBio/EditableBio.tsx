@@ -15,9 +15,9 @@ type Props = {
 };
 
 type BIO = {
-  key: keyof M.Character,
-  label: string,
-  value: string,
+  key: keyof M.Character;
+  label: string;
+  value: string;
 };
 
 export const EditableBio = memo(function EditableBio({ character, onSubmit, onCancel }: Props) {
@@ -27,35 +27,41 @@ export const EditableBio = memo(function EditableBio({ character, onSubmit, onCa
     formState: { errors },
   } = useForm();
 
-  const bio: Array<BIO> = useMemo(() => (
-    [
+  const bio: Array<BIO> = useMemo(
+    () => [
       {
         key: 'birthYear',
         label: 'Birth Year',
         value: character.birthYear,
-      }, {
+      },
+      {
         key: 'height',
         label: 'Height',
         value: `${character.height}` || 'Unknown',
-      }, {
+      },
+      {
         key: 'mass',
         label: 'Mass',
         value: `${character.mass}` || 'Unknown',
-      }, {
+      },
+      {
         key: 'gender',
         label: 'Gender',
         value: character.gender,
-      }, {
+      },
+      {
         key: 'hairColor',
         label: 'Hair Color',
         value: character.hairColor,
-      }, {
+      },
+      {
         key: 'skinColor',
         label: 'Skin Color',
         value: character.skinColor,
       },
-    ]
-  ), [character]);
+    ],
+    [character],
+  );
 
   return (
     <form className={styles.editableBio} noValidate onSubmit={handleSubmit(handleFormSubmit)}>
@@ -69,7 +75,7 @@ export const EditableBio = memo(function EditableBio({ character, onSubmit, onCa
         />
       </InputLabel>
 
-      {bio.map((item) => renderBioItem(item.key, item.label, item.value))}
+      {bio.map(item => renderBioItem(item.key, item.label, item.value))}
 
       <div className={styles.buttons}>
         {renderSaveButton()}
@@ -95,12 +101,7 @@ export const EditableBio = memo(function EditableBio({ character, onSubmit, onCa
 
   function renderSaveButton() {
     return (
-      <Button
-        data-testid="save-locally-button"
-        className={styles.button}
-        variant="contained"
-        type="submit"
-      >
+      <Button data-testid="save-locally-button" className={styles.button} variant="contained" type="submit">
         Save Locally
       </Button>
     );
@@ -124,10 +125,9 @@ export const EditableBio = memo(function EditableBio({ character, onSubmit, onCa
     return (
       <InputLabel className={styles.label} key={key}>
         <Typography className={styles.text} variant="body2">
-          {label}
-          :
+          {label}:
         </Typography>
-        <Input className={styles.input} defaultValue={value} {...register((key))} />
+        <Input className={styles.input} defaultValue={value} {...register(key)} />
       </InputLabel>
     );
   }

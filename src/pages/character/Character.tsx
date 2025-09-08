@@ -15,11 +15,7 @@ import { CharacterSkeletons } from './CharacterSkeletons/CharacterSkeletons';
 import styles from './Character.module.css';
 
 export function Character() {
-  const {
-    loading,
-    character,
-    setCharacter,
-  } = useLoadCharacter();
+  const { loading, character, setCharacter } = useLoadCharacter();
 
   const [isEditMode, setIsEditMode] = useState(false);
 
@@ -58,9 +54,17 @@ export function Character() {
 
     if (!character) {
       return (
-        <Typography fontSize={24} variant="h3">Data not found...</Typography>
+        <Typography fontSize={24} variant="h3">
+          Data not found...
+        </Typography>
       );
     }
+
+    const bioComponent = isEditMode ? (
+      <EditableBio character={character} onSubmit={handleSubmit} onCancel={handleClick} />
+    ) : (
+      <StaticBio character={character} onClick={handleClick} />
+    );
 
     return (
       <div className={styles.hero}>
@@ -68,22 +72,7 @@ export function Character() {
           <img className={styles.heroImg} src={character.imageUrl} alt={character.name} />
         </div>
 
-        <div className={styles.content}>
-          { isEditMode
-            ? (
-              <EditableBio
-                character={character}
-                onSubmit={handleSubmit}
-                onCancel={handleClick}
-              />
-            )
-            : (
-              <StaticBio
-                character={character}
-                onClick={handleClick}
-              />
-            )}
-        </div>
+        <div className={styles.content}>{bioComponent}</div>
       </div>
     );
   }
@@ -95,6 +84,6 @@ export function Character() {
 
   function handleClick(evt: MouseEvent<HTMLButtonElement>) {
     evt.preventDefault();
-    setIsEditMode((v) => !v);
+    setIsEditMode(v => !v);
   }
 }

@@ -2,25 +2,25 @@ import { Breadcrumbs as MUIBreadcrumbs, Link as MUILink, Typography } from '@mui
 import { Link } from 'react-router-dom';
 
 export type Breadcrumb = {
-  title: string,
-  link: string,
-  disabled?: boolean,
+  title: string;
+  link: string;
+  disabled?: boolean;
 };
 
 type Props = {
-  data: Array<Breadcrumb>
+  data: Array<Breadcrumb>;
 };
 
 export function Breadcrumbs({ data }: Props) {
-  return (
-    <MUIBreadcrumbs aria-label="breadcrumbs">
-      {data.map(renderBreadcrumb)}
-    </MUIBreadcrumbs>
-  );
+  return <MUIBreadcrumbs aria-label="breadcrumbs">{data.map(renderBreadcrumb)}</MUIBreadcrumbs>;
 
   function renderBreadcrumb(item: Breadcrumb) {
     if (item.disabled) {
-      return <Typography key={item.title} color="text.primary">{item.title}</Typography>;
+      return (
+        <Typography key={item.title} color="text.primary">
+          {item.title}
+        </Typography>
+      );
     }
 
     return (
