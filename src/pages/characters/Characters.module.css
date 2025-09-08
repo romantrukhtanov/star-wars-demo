@@ -61,9 +61,9 @@
 @media (max-width: 767.98px) {
   .characters {
     grid-template-areas:
-    'search'
-    'list'
-    'pagination';
+      'search'
+      'list'
+      'pagination';
   }
 
   .list {

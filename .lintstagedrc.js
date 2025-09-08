@@ -6,9 +6,7 @@ const config = {
   '**/*.ts?(x)': () => 'npm run ts',
 
   // Lint then format TypeScript and JavaScript files
-  '**/*.(ts|js)?(x)': (filenames) => [
-    `eslint --fix ${filenames.join(' ')}`,
-  ],
+  '**/*.(ts|js)?(x)': filenames => [`eslint --fix ${filenames.join(' ')}`],
 };
 
 module.exports = config;

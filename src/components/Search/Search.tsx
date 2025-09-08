@@ -31,11 +31,11 @@ export const Search = observer(function Search() {
         open={open}
         onOpen={() => setOpen(true)}
         onClose={() => setOpen(false)}
-        getOptionLabel={(option) => option.name}
+        getOptionLabel={option => option.name}
         options={options}
         loading={loading}
         onChange={handleOptionChange}
-        renderInput={(params) => (
+        renderInput={params => (
           <TextField
             {...params}
             placeholder="Search"
@@ -44,9 +44,7 @@ export const Search = observer(function Search() {
             onChange={handleChange}
             InputProps={{
               ...params.InputProps,
-              startAdornment: (
-                <SearchIcon />
-              ),
+              startAdornment: <SearchIcon />,
               endAdornment: (
                 <>
                   {loading ? <CircularProgress color="inherit" size={20} /> : null}

@@ -13,12 +13,7 @@ export class MemoryCache {
 
   private cacheSize = 0;
 
-  public put<TKey, TValue>(
-    key: TKey,
-    value: TValue,
-    timeMS: number,
-    timeoutCallback?: TimeoutCallback,
-  ) {
+  public put<TKey, TValue>(key: TKey, value: TValue, timeMS: number, timeoutCallback?: TimeoutCallback) {
     const oldRecord = this.cache.get(key);
 
     if (oldRecord) {
@@ -53,11 +48,7 @@ export class MemoryCache {
 
     if (oldRecord) {
       clearTimeout(oldRecord.timeoutId);
-      if (
-        !Number.isNaN(oldRecord.expire)
-        && Number.isFinite(oldRecord.expire)
-        && oldRecord.expire < Date.now()
-      ) {
+      if (!Number.isNaN(oldRecord.expire) && Number.isFinite(oldRecord.expire) && oldRecord.expire < Date.now()) {
         canDelete = false;
       }
     } else {

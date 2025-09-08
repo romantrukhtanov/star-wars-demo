@@ -16,9 +16,7 @@ export function CharacterSkeletons() {
           <Skeleton />
         </div>
 
-        <div className={styles.bioSkeletons}>
-          {Array(BIO_ITEMS_COUNT).fill('').map(renderSkeletonItem)}
-        </div>
+        <div className={styles.bioSkeletons}>{Array(BIO_ITEMS_COUNT).fill('').map(renderSkeletonItem)}</div>
       </div>
     </div>
   );

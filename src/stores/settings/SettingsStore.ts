@@ -17,8 +17,8 @@ export class SettingsStore {
 
   @action.bound
   public setUserTheme = (userTheme: UserTheme) => {
-      this.userTheme = userTheme;
-    };
+    this.userTheme = userTheme;
+  };
 
   private mediaPrefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -27,8 +27,8 @@ export class SettingsStore {
 
   @action.bound
   private handleChangeSystemPrefersColorSchemeDark = () => {
-      this.isSystemPrefersColorSchemeDark = this.mediaPrefersColorSchemeDark.matches;
-    };
+    this.isSystemPrefersColorSchemeDark = this.mediaPrefersColorSchemeDark.matches;
+  };
 
   @computed
   public get appTheme(): Theme {

@@ -8,7 +8,9 @@ export function ErrorBoundary() {
 
   return (
     <div className={styles.errorBoundary}>
-      <Typography className={styles.text} color="text.primary">{getErrorStatusText()}</Typography>
+      <Typography className={styles.text} color="text.primary">
+        {getErrorStatusText()}
+      </Typography>
     </div>
   );
 

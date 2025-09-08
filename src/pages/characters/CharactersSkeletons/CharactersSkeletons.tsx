@@ -11,11 +11,7 @@ export function CharactersSkeletons() {
 
   const itemsCount = isMobile ? MOBILE_ITEMS_COUNT : DESKTOP_ITEMS_COUNT;
 
-  return (
-    <div className={styles.charactersSkeletons}>
-      {Array(itemsCount).fill('').map(renderSkeletonItem)}
-    </div>
-  );
+  return <div className={styles.charactersSkeletons}>{Array(itemsCount).fill('').map(renderSkeletonItem)}</div>;
 
   function renderSkeletonItem(_: unknown, index: number) {
     return (

@@ -11,13 +11,5 @@ const classes: SkeletonProps['classes'] = {
 };
 
 export function Skeleton({ variant, height = '100%', ...rest }: Props) {
-  return (
-    <MUISkeleton
-      classes={classes}
-      animation="wave"
-      variant={variant ?? 'rounded'}
-      height={height}
-      {...rest}
-    />
-  );
+  return <MUISkeleton classes={classes} animation="wave" variant={variant ?? 'rounded'} height={height} {...rest} />;
 }

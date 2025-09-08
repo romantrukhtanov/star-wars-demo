@@ -16,19 +16,16 @@ function AllTheProviders({ children }: Props) {
     <StoresProvider value={stores}>
       <StyledEngineProvider injectFirst>
         <ThemeProvider>
-          <MemoryRouter>
-            {children}
-          </MemoryRouter>
+          <MemoryRouter>{children}</MemoryRouter>
         </ThemeProvider>
       </StyledEngineProvider>
     </StoresProvider>
   );
 }
 
-const customRender = (
-  ui: ReactElement,
-  options?: RenderOptions,
-) => render(ui, { wrapper: AllTheProviders, ...options });
+const customRender = (ui: ReactElement, options?: RenderOptions) => {
+  return render(ui, { wrapper: AllTheProviders, ...options });
+};
 
 // re-export everything
 export * from '@testing-library/react';

@@ -9,59 +9,64 @@ module.exports = {
     'plugin:mobx/recommended',
     'plugin:compat/recommended',
     'plugin:eslint-comments/recommended',
+    'plugin:prettier/recommended',
   ],
   rules: {
     'arrow-body-style': 'off', // code can get ugly
     'prefer-arrow-callback': 'off', // prevents using of named components as `observer` args
     'consistent-return': 'off', // not needed in TS
     'no-restricted-syntax': 'off',
-    'multiline-ternary': ['error', 'always-multiline'],
-    'object-curly-newline': ['error', { 'multiline': true }],
-    'max-len': ['error', { 'code': 120, 'ignoreComments': true }],
+    'multiline-ternary': ['warn', 'always-multiline'],
+    'object-curly-newline': ['error', { multiline: true }],
+    'max-len': ['error', { code: 120, ignoreComments: true }],
     'no-array-any/no-array-any': 'error',
     'react/react-in-jsx-scope': 'off', // new jsx transform
     'react/require-default-props': 'off', // not needed in TS
-    'react/jsx-indent': [
-      'error',
-      2,
-      { indentLogicalExpressions: true },
-    ],
     'react/jsx-props-no-spreading': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
-    'eslint-comments/disable-enable-pair': ['error', {allowWholeFile: true}],
+    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/require-description': 'warn',
     'mobx/missing-observer': 'off', // false positive
     'import/extensions': 'off',
     'import/prefer-default-export': 'off', // https://t.me/why_not_export_default
-    '@typescript-eslint/array-type': ['error', {
-      default: 'generic',
-      readonly: 'generic',
-    }], // more explicit
+    '@typescript-eslint/array-type': [
+      'error',
+      {
+        default: 'generic',
+        readonly: 'generic',
+      },
+    ], // more explicit
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/consistent-type-imports': 'error',
-    '@typescript-eslint/explicit-member-accessibility': ['error', {
-      accessibility: 'explicit',
-      overrides: {
-        constructors: 'off',
-      }
-    }],
-    '@typescript-eslint/no-use-before-define': ['error', {
-      functions: false,
-      classes: true,
-      variables: true,
-      allowNamedExports: false,
-      enums: true,
-      typedefs: true,
-      ignoreTypeReferences: true,
-    }],
+    '@typescript-eslint/explicit-member-accessibility': [
+      'error',
+      {
+        accessibility: 'explicit',
+        overrides: {
+          constructors: 'off',
+        },
+      },
+    ],
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+        allowNamedExports: false,
+        enums: true,
+        typedefs: true,
+        ignoreTypeReferences: true,
+      },
+    ],
     'import/order': [
       'error',
       {
-        'pathGroups': [
+        pathGroups: [
           {
-            'pattern': '@/**',
-            'group': 'internal'
-          }
+            pattern: '@/**',
+            group: 'internal',
+          },
         ],
         groups: [['builtin', 'external'], 'internal', 'parent', 'sibling', 'index'],
         'newlines-between': 'always',
@@ -72,6 +77,22 @@ module.exports = {
       'error',
       {
         allow: ['info', 'warn', 'error'],
+      },
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        semi: true,
+        singleQuote: true,
+        printWidth: 120,
+        bracketSpacing: true,
+        bracketSameLine: false,
+        useTabs: false,
+        tabWidth: 2,
+        trailingComma: 'all',
+        endOfLine: 'lf',
+        quoteProps: 'as-needed',
+        arrowParens: 'avoid',
       },
     ],
   },
@@ -87,12 +108,7 @@ module.exports = {
     window: 'readonly',
   },
   settings: {
-    'import/extensions': [
-      '.js',
-      '.jsx',
-      '.ts',
-      '.tsx',
-    ],
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
     'import/resolver': {
       node: {
         paths: ['src'],

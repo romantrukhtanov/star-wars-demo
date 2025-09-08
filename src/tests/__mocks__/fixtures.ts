@@ -28,9 +28,7 @@ export const mockServerCharacter: S.Character = {
     'https://swapi.dev/api/films/6/',
   ],
   species: [],
-  vehicles: [
-    'https://swapi.dev/api/vehicles/30/',
-  ],
+  vehicles: ['https://swapi.dev/api/vehicles/30/'],
   starships: [],
   created: '2014-12-10T15:20:09.791000Z',
   edited: '2014-12-20T21:17:50.315000Z',
@@ -55,9 +53,7 @@ export const mockClientCharacter: M.Character = {
     'https://swapi.dev/api/films/6/',
   ],
   species: [],
-  vehicles: [
-    'https://swapi.dev/api/vehicles/30/',
-  ],
+  vehicles: ['https://swapi.dev/api/vehicles/30/'],
   starships: [],
   created: '2014-12-10T15:20:09.791000Z',
   edited: '2014-12-20T21:17:50.315000Z',
