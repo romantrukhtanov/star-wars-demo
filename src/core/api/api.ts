@@ -2,10 +2,9 @@ import { MemoryCache } from '@/utils/memoryCache';
 import { convertCharacter, convertCharacters } from '@/core/api/server/converters';
 import type * as S from '@/core/api/server/types';
 import type * as M from '@/core/api/model';
+import { API_URL } from '@/utils/env.ts';
 
 const NOT_FOUND_STATUS = 404;
-
-const API_URL = 'https://swapi.tech/api';
 
 class Api {
   constructor(private readonly endPoint: string) {}
