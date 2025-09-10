@@ -131,7 +131,8 @@ src/
 
 The project uses several environment variables for configuration:
 
-- `VITE_BASE_URL` - API base URL for Star Wars data
+- `VITE_BASE_URL` - Base directory URL for project
+- `VITE_API_URL` - API base URL for Star Wars data
 
 ### Code Style
 
